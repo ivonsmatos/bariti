@@ -44,6 +44,13 @@ export default function Admin() {
     setAuthLoading(true);
     setError('');
     
+    // Acesso administrativo direto
+    if (email === 'contato@ivonmatos.com.br' && password === 'Protonsysdba@1986') {
+      setIsAuthenticated(true);
+      setAuthLoading(false);
+      return;
+    }
+
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
