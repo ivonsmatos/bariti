@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/bariti-logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +30,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="font-serif text-2xl font-bold text-bariti-rust">
-              BARITI
+            <Link to="/">
+              <img src={logo} alt="Bariti Tech" className="h-10 w-auto" />
             </Link>
           </div>
           
