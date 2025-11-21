@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-import logo from '../assets/bariti-logo.png';
+import logo from '../assets/logo-head.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

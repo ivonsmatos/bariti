@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Linkedin, Instagram, Mail } from 'lucide-react';
-import logo from '../assets/bariti-logo.png';
+import logo from '../assets/logo-footer.png';
 
 export default function Footer() {
   return (
